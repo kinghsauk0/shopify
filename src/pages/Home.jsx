@@ -17,7 +17,7 @@ function Home() {
   useEffect(() => {
     const fetchProducts = async () => {
       try {
-        const response = await axios.get('https://messold101.myshopify.com/admin/api/2023-01/products.json', {
+        const response = await axios.get('/products.json', {
           headers: {
             'X-Shopify-Access-Token': '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',
             'Content-Type': 'application/json',
