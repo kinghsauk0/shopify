@@ -16,8 +16,9 @@ function Home() {
 
   useEffect(() => {
     const fetchProducts = async () => {
+      const API_URL = process.env.REACT_APP_API_URL
       try {
-        const response = await axios.get('/products.json', {
+        const response = await axios.get(`${API_URL}/products.json`, {
           headers: {
             'X-Shopify-Access-Token': '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',
             'Content-Type': 'application/json',
