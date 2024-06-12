@@ -1,0 +1,27 @@
+.container{
+    width: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.subcontainer{
+    width: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding-bottom: 100px;
+    padding-top: 50px;
+}
+.title{
+    font-size: 30px;
+    font-weight: bold;
+    padding-left: 20px;
+    padding-top: 50px;
+    color: purple;
+}

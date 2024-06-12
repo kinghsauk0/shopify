@@ -1,0 +1,50 @@
+.container{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    background-color: azure;
+    
+   
+    align-items: center;
+}
+
+.logo{
+    color: #0000ff;
+    font-size: 25px;
+    font-weight: 900;
+    padding: 20px;
+    padding-left: 40px;
+    padding-right: 200px;
+}
+
+
+.linkContainer{
+    width: 50%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    list-style: none;
+    text-decoration: none;
+}
+.linkContainer > li{
+    padding-bottom: 10px;
+}
+
+
+.navLink{
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 20px;
+    color: black;
+}
+
+.activeNavLink{
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 20px;
+    color: purple;
+}
