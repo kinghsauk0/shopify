@@ -20,7 +20,6 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
-  "proxy": "https://messold101.myshopify.com/admin/api/2023-01",
   "eslintConfig": {
     "extends": [
       "react-app",
