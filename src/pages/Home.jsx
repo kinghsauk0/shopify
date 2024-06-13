@@ -4,7 +4,7 @@ import axios from 'axios';
 import Products from "../components/Products";
 import { useNavigate } from "react-router-dom";
 import { UseCheckoutDataContext } from "../context/CheckoutData.context";
-const config = require('./config')
+import config from '../config'
 
 function Home() {
   const [data, setData] = useState({ products: [] });
