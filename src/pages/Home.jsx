@@ -21,7 +21,7 @@ function Home() {
       const API = process.env.URL
       const token = process.env.token
       try {
-        const response = await axios.get(`${API}/admin/api/2023-01/products.json`, {
+        const response = await axios.get(`${API}`, {
           headers: {
             "X-Shopify-Access-Token": token,
             'Content-Type': 'application/json',
