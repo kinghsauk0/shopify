@@ -19,10 +19,10 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "serve": "node server.js"
+    "serve": "node server.js",
+    "eject": "react-scripts eject"
   },
-  "proxy": "https://messold101.myshopify.com/admin/api/2023-01",
+  "proxy": "https://messold101.myshopify.com",
   "eslintConfig": {
     "extends": [
       "react-app",

@@ -16,18 +16,18 @@ function Home() {
 
   useEffect(() => {
     const fetchProducts = async () => {
-      
       try {
-        const response = await axios.get('/products.json', {
+        const response = await axios.get("/admin/api/2023-01/products.json", {
           headers: {
-            'X-Shopify-Access-Token': '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',
+            "X-Shopify-Access-Token": "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",
             'Content-Type': 'application/json',
             'Accept': 'application/json'
-          }
+          },
         });
         setData(response.data);
         setLoading(false);
       } catch (error) {
+        console.log(error)
         setError(error);
         setLoading(false);
       } 
