@@ -4,6 +4,7 @@ import axios from 'axios';
 import Products from "../components/Products";
 import { useNavigate } from "react-router-dom";
 import { UseCheckoutDataContext } from "../context/CheckoutData.context";
+import { config } from "../../configs";
 
 function Home() {
   const [data, setData] = useState({ products: [] });
@@ -17,7 +18,7 @@ function Home() {
   useEffect(() => {
     const fetchProducts = async () => {
       try {
-        const response = await axios.get("/admin/api/2023-01/products.json", {
+        const response = await axios.get(`${config.SERVER_URI}/admin/api/2023-01/products.json`, {
           headers: {
             "X-Shopify-Access-Token": "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",
             'Content-Type': 'application/json',
