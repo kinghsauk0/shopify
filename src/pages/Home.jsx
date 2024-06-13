@@ -11,9 +11,7 @@ function Home() {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
   
-  const SERVER_URI = process.env.NODE_ENV === 'production'
-  ? process.env.REACT_APP_SERVER_URI_PRODUCTION
-  : process.env.REACT_APP_SERVER_URI_DEVELOPMENT;
+  
 
   const navigate = useNavigate()
   const {getcheckoutData} =UseCheckoutDataContext()
@@ -21,7 +19,7 @@ function Home() {
   useEffect(() => {
     const fetchProducts = async () => {
       try {
-        const response = await axios.get(`${SERVER_URI}/admin/api/2023-01/products.json`, {
+        const response = await axios.get(`/admin/api/2023-01/products.json`, {
           headers: {
             "X-Shopify-Access-Token": "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",
             'Content-Type': 'application/json',
